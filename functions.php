@@ -292,27 +292,27 @@ function eco_title() {
 function google_additional_questions_tracking(){
 	if ( is_page('additional-questions') ) {
 		?>
+
     	<!-- Google Code for Conversion Conversion Page -->
-    	<script type="text/javascript">
+		<script type="text/javascript">
 		/* <![CDATA[ */
 		var google_conversion_id = 1063574838;
 		var google_conversion_language = "en_US";
 		var google_conversion_format = "1";
 		var google_conversion_color = "ffffff";
-		var google_conversion_label = "QInPCPThlAEQtrqT-wM"; 
-		if (500.00) {
-			var google_conversion_value = 500.0;
-		}
-  		/* ]]> */
+		var google_conversion_label = "QInPCPThlAEQtrqT-wM";
+		var google_conversion_value = 500.0;
+		var google_remarketing_only = false;
+		/* ]]> */
 		</script>
-		<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 		</script>
 		<noscript>
 		<div style="display:inline;">
-		<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1063574838/?value=500.0&label=QInPCPThlAEQtrqT-wM&guid=ON&script=0"/>
+		<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1063574838/?value=500.0&amp;label=QInPCPThlAEQtrqT-wM&amp;guid=ON&amp;script=0"/>
 		</div>
 		</noscript>
-		
+
 		<!-- Google Code for Contact Form Conversion Page -->
 		<script type="text/javascript">
 		/* <![CDATA[ */
@@ -321,19 +321,18 @@ function google_additional_questions_tracking(){
 		var google_conversion_format = "2";
 		var google_conversion_color = "ffffff";
 		var google_conversion_label = "XYR-CPG54AIQt-j-4QM";
-		var google_conversion_value = 0;
-		if (500.00) {
-		  google_conversion_value = 500.00;
-		}
+		var google_conversion_value = 500.00;
+		var google_remarketing_only = false;
 		/* ]]> */
 		</script>
-		<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
 		</script>
 		<noscript>
 		<div style="display:inline;">
-		<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1010807863/?value=500.00&amp;label=XYR-CPG54AIQt-j-4QM&amp;guid=ON&amp;script=0"/>
+		<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1010807863/?value=500.00&amp;label=XYR-CPG54AIQt-j-4QM&amp;guid=ON&amp;script=0"/>
 		</div>
 		</noscript>
+
 		<?php
 	}
 }
