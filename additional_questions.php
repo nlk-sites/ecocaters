@@ -255,42 +255,40 @@ eco_bgimg();
 			<form enctype="application/x-www-form-urlencoded" name="contact_form_second" id="contact_form_second" method="POST" action="<?php the_permalink(); ?>">	
 
 				<input type="hidden" name="FormAction_second" value="">
-
 				<input type="hidden" name="contact_name" value="<?php echo(tovalue($fldcontact_name)); ?>"/>
-
 				<input type="hidden" name="contact_email" value="<?php echo(tovalue($fldcontact_email)); ?>"/>
-
 				<input type="hidden" name="contact_phone" value="<?php echo(tovalue($fldcontact_phone)); ?>"/>
-
 				<input type="hidden" name="from" value="<?php echo(tovalue($source)); ?>"/>
 
-				<p><label for="contact_second_occasion">What is the occasion?</label>
+				<p>
+					<label for="contact_second_occasion">What is the occasion?</label>
+					<textarea id="contact_second_occasion" name="contact_second_occasion" cols="" rows=""><?php echo(tovalue($fldcontact_second_occasion)); ?></textarea>
+				</p>
 
-					<textarea id="contact_second_occasion" name="contact_second_occasion" cols="" rows=""><?php echo(tovalue($fldcontact_second_occasion)); ?></textarea></p>
+                <p>
+                	<label for="contact_second_event">When is your event?</label>
+					<input class="small inputPost" type="text" id="datepicker" name="contact_second_event" value="<?php echo(tovalue($fldcontact_second_event)); ?>"  />
+				</p>
 
-                    <p><label for="contact_second_event">When is your event?</label>
+				<p>
+					<label for="contact_second_quests">How many guests are you expecting?</label>
+					<input class="small inputPost" type="text" id="contact_second_quests" name="contact_second_quests" value="<?php echo(tovalue($fldcontact_second_quests)); ?>"  />
+				</p>
 
-					<input class="small inputPost" type="text" id="datepicker" name="contact_second_event" value="<?php echo(tovalue($fldcontact_second_event)); ?>"  /></p>
-
-				<p><label for="contact_second_quests">How many guests are you expecting?</label>
-
-					<input class="small inputPost" type="text" id="contact_second_quests" name="contact_second_quests" value="<?php echo(tovalue($fldcontact_second_quests)); ?>"  /></p>
-
-				<p><label for="contact_second_place">Where is your event?</label>
-
+				<p>
+					<label for="contact_second_place">Where is your event?</label>
                 	<input type="radio" style="width:auto; height:auto" name="contact_second_place" value="San Diego" />  San Diego<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_place" value="Los Angeles" />  Los Angeles<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_place" value="Orange County" />  Orange County<br />
+					<input type="radio" style="width:auto; height:auto" name="contact_second_place" value="Washington D.C." />  Washington D.C.<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_place" id="otherRadio" value="other" />  
+                    <input type="text" value="Enter Location" name="otherLocation" id="otherLocation" class="inputPost inline" />
+                </p>
 
-                   <input type="radio" style="width:auto; height:auto" name="contact_second_place" value="Washington D.C." />  Washington D.C.<br />
-
-                    <input type="radio" style="width:auto; height:auto" name="contact_second_place" id="otherRadio" value="other" />  <input type="text" value="Enter Location" name="otherLocation" id="otherLocation" class="inputPost inline" /></p>
-
-                    <p><label for="contact_second_address">Please provide your Venue Address</label>
-
-				<textarea id="contact_second_address" name="contact_second_address" cols="" rows=""><?php echo(tovalue($fldcontact_second_address)); ?></textarea></p>
+                    <p>
+                    	<label for="contact_second_address">Please provide your Venue Address</label>
+						<textarea id="contact_second_address" name="contact_second_address" cols="" rows=""><?php echo(tovalue($fldcontact_second_address)); ?></textarea>
+					</p>
 
                     
 
@@ -306,17 +304,20 @@ eco_bgimg();
 
 				?>
 
-				<p><label for="contact_second_particular_type">Is there any particular type of cuisine you are looking for?</label>
+				<p>
+					<label for="contact_second_particular_type">Is there any particular type of cuisine you are looking for?</label>
+					<input type="text" class="inputPost" id="contact_second_particular_type" name="contact_second_particular_type" value="<?php echo(tovalue($fldcontact_second_particular_type)); ?>"  />
+				</p>
 
-					<input type="text" class="inputPost" id="contact_second_particular_type" name="contact_second_particular_type" value="<?php echo(tovalue($fldcontact_second_particular_type)); ?>"  /></p>
+				<p>
+					<label for="contact_second_food_restrictions">Are there any food restrictions we need to be aware of?</label>
+					<input type="text" class="inputPost" id="contact_second_food_restrictions" name="contact_second_food_restrictions" value="<?php echo(tovalue($fldcontact_second_food_restrictions)); ?>"  />
+				</p>
 
-				<p><label for="contact_second_food_restrictions">Are there any food restrictions we need to be aware of?</label>
-
-					<input type="text" class="inputPost" id="contact_second_food_restrictions" name="contact_second_food_restrictions" value="<?php echo(tovalue($fldcontact_second_food_restrictions)); ?>"  /></p>
-
-                    <p><label for="contact_second_beverage">Would you like us to provide beverage (alcoholic or non-alcoholic)?</label>
-
-					<input type="text" class="inputPost" id="contact_second_beverage" name="contact_second_beverage" value="<?php echo(tovalue($fldcontact_second_beverage)); ?>"  /></p>
+                <p>
+                	<label for="contact_second_beverage">Would you like us to provide beverage (alcoholic or non-alcoholic)?</label>
+					<input type="text" class="inputPost" id="contact_second_beverage" name="contact_second_beverage" value="<?php echo(tovalue($fldcontact_second_beverage)); ?>"  />
+				</p>
 
                     <p><label for="contact_second_rentals">Would you like us to provide the rentals such as tables, chairs, linens, plates, etc?</label>
 
@@ -344,9 +345,15 @@ eco_bgimg();
 
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$15,000 - $20,000" />  $15,000 - $20,000<br />
 
-                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$20,000+" />  $20,000+</p>
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$20,000 - $30,000" />  $20,000 - $30,000<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$30,000 - $40,000" />  $30,000 - $40,000<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$40,000 - $50,000" />  $40,000 - $50,000<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$50,000 - $75,000" />  $50,000 - $75,000<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$75,000 - $100,000" />  $75,000 - $100,000<br />
 
-                    <p><label for="contact_second_need">Do you need event planning or design?</label>
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$100,000+" />  $100,000+</p>
+
+                    <p><label for="contact_second_need">Do you need wedding coordination, event planning or event design services?</label>
 
 					<input type="text" class="inputPost" id="contact_second_need" name="contact_second_need" value="<?php echo(tovalue($fldcontact_second_need)); ?>"  /></p>
 
@@ -364,9 +371,11 @@ eco_bgimg();
 
                         <option value="The Knot">The Knot</option>
 
-                        <option value="Gathering Guide">Gathering Guide</option>
+                        <option value="Style Me Pretty">Style Me Pretty</option>
 
-                        <option value="Here Comes The Guide">Here Comes The Guide</option>
+                        <option value="Yelp">Yelp</option>
+
+                        <option value="Spork Foods">Spork Foods</option>
 
                         <option value="Past Client">Past Client</option>
 
