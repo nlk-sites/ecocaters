@@ -285,24 +285,20 @@ eco_bgimg();
                     <input type="text" value="Enter Location" name="otherLocation" id="otherLocation" class="inputPost inline" />
                 </p>
 
-                    <p>
-                    	<label for="contact_second_address">Please provide your Venue Address</label>
-						<textarea id="contact_second_address" name="contact_second_address" cols="" rows=""><?php echo(tovalue($fldcontact_second_address)); ?></textarea>
-					</p>
+                <p>
+                	<label for="contact_second_address">Please provide your Venue Address</label>
+					<textarea id="contact_second_address" name="contact_second_address" cols="" rows=""><?php echo(tovalue($fldcontact_second_address)); ?></textarea>
+				</p>
 
-                    
-
-				<?php 
-
-					$name = 'contact_second_service_type';
-
-					$label = 'What type of service would you like (buffet, plated, family style, hors d\'oeuvres, tapas)?';
-
-					$values = array('Choose Service Type', 'Buffet', 'Plated', 'Family Style', 'Hors d\'Oeuvres', 'Tapas', 'I Don\'t Know');
-
-					echo generate_list($values, $label, $name, $fldcontact_second_service_type); 
-
-				?>
+				<p>
+					<?php 
+						$name = 'contact_second_service_type';
+						$label = 'What type of service would you like (buffet, plated, family style, hors d\'oeuvres, tapas)?';
+						$values = array('Choose Service Type', 'Buffet', 'Plated', 'Family Style', 'Hors d\'Oeuvres', 'Tapas', 'I Don\'t Know', 'Other');
+						echo generate_list($values, $label, $name, $fldcontact_second_service_type); 
+					?>
+                    <input type="text" class="inputPost" id="contact_second_service_type_other" name="contact_second_service_type_other" style="display: none;" placeholder="Please describe 'other'"/>
+				</p>
 
 				<p>
 					<label for="contact_second_particular_type">Is there any particular type of cuisine you are looking for?</label>
@@ -319,145 +315,130 @@ eco_bgimg();
 					<input type="text" class="inputPost" id="contact_second_beverage" name="contact_second_beverage" value="<?php echo(tovalue($fldcontact_second_beverage)); ?>"  />
 				</p>
 
-                    <p><label for="contact_second_rentals">Would you like us to provide the rentals such as tables, chairs, linens, plates, etc?</label>
+                <p>
+                	<label for="contact_second_rentals">Would you like us to provide the rentals such as tables, chairs, linens, plates, etc?</label>
+					<input type="text" class="inputPost" id="contact_second_rentals" name="contact_second_rentals" value="<?php echo(tovalue($fldcontact_second_rentals)); ?>"  />
+				</p>
 
-					<input type="text" class="inputPost" id="contact_second_rentals" name="contact_second_rentals" value="<?php echo(tovalue($fldcontact_second_rentals)); ?>"  /></p>
+				<p>
+					<label for="contact_second_kitchen">Does the venue have a commercial kitchen we can use?</label>
+					<input type="text" class="inputPost" id="contact_second_kitchen" name="contact_second_kitchen" value="<?php echo(tovalue($fldcontact_second_kitchen)); ?>"  />
+				</p>
 
-				<p><label for="contact_second_kitchen">Does the venue have a commercial kitchen we can use?</label>
-
-					<input type="text" class="inputPost" id="contact_second_kitchen" name="contact_second_kitchen" value="<?php echo(tovalue($fldcontact_second_kitchen)); ?>"  /></p>
-
-                    <p><label for="contact_second_budget_for_catering">What is your budget for catering?</label>
-
+                <p>
+                	<label for="contact_second_budget_for_catering">What is your budget for catering?</label>
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$500 - $1,000" />  $500 - $1,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$1,000 - $2,000" />  $1,000 - $2,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$2,000 - $4,000" />  $2,000 - $4,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$4,000 - $6,000" />  $4,000 - $6,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$6,000 - $8,000" />  $6,000 - $8,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$8,000 - $10,000" />  $8,000 - $10,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$10,000 - $15,000" />  $10,000 - $15,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$15,000 - $20,000" />  $15,000 - $20,000<br />
-
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$20,000 - $30,000" />  $20,000 - $30,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$30,000 - $40,000" />  $30,000 - $40,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$40,000 - $50,000" />  $40,000 - $50,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$50,000 - $75,000" />  $50,000 - $75,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$75,000 - $100,000" />  $75,000 - $100,000<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$100,000+" />  $100,000+
+                </p>
 
-                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$100,000+" />  $100,000+</p>
+                <p>
+                	<label for="contact_second_need">Do you need wedding coordination, event planning or event design services?</label>
+					<input type="text" class="inputPost" id="contact_second_need" name="contact_second_need" value="<?php echo(tovalue($fldcontact_second_need)); ?>"  />
+				</p>
 
-                    <p><label for="contact_second_need">Do you need wedding coordination, event planning or event design services?</label>
-
-					<input type="text" class="inputPost" id="contact_second_need" name="contact_second_need" value="<?php echo(tovalue($fldcontact_second_need)); ?>"  /></p>
-
-					<p><label for="contact_second_hear">Where did you hear about us?</label>
-
-                    <select name="contact_second_hear">
-
+				<p>
+					<label for="contact_second_hear">Where did you hear about us?</label>
+                    <select name="contact_second_hear" id="contact_second_hear">
                     	<option value="" selected="selected">Please Choose</option>
-
                     	<option value="Google">Google</option>
-
                         <option value="Venue List">Venue List</option>
-
                         <option value="Referral">Referral</option>
-
                         <option value="The Knot">The Knot</option>
-
                         <option value="Style Me Pretty">Style Me Pretty</option>
-
                         <option value="Yelp">Yelp</option>
-
                         <option value="Spork Foods">Spork Foods</option>
-
                         <option value="Past Client">Past Client</option>
-
                         <option value="Other Search Engine">Other Search Engine</option>
-
                         <option value="Other">Other</option>
+                    </select>
+                    <input type="text" class="inputPost" id="contact_second_hear_other" name="contact_second_hear_other" style="display: none;" placeholder="Please describe 'other'"/>
+                </p>
 
-                    </select></p>
+				<p>
+					<label class="last" for="contact_second_other_details">Please tell us any other important details about your event.</label>
+					<textarea id="contact_second_other_details" name="contact_second_other_details" cols="" rows=""><?php echo(tovalue($fldcontact_second_other_details)); ?></textarea>
+				</p>
 
-
-
-				<p><label class="last" for="contact_second_other_details">Please tell us any other important details about your event.</label>
-
-					<textarea id="contact_second_other_details" name="contact_second_other_details" cols="" rows=""><?php echo(tovalue($fldcontact_second_other_details)); ?></textarea></p>
-
-                    <p><br /></p>
+				<p><br /></p>
 
 				<p><input type="submit" value="Submit" class="submitPos" onclick="document.contact_form_second.FormAction_second.value='submit';"/></p>
 
 			</form>
-
-			</div>
-
-						
-
+		</div>
 	<?php endwhile; endif; ?>
-
 	<?php edit_post_link(__('Edit this entry.', 'kubrick'), '<p>', '</p>'); ?>
-
             </div>
-
         </div>
-
         <div id="right">
 
 			<?php
-
 			get_sidebar('seen');
-
-			
-
 			get_sidebar('quotes');
-
 			?>
 
         </div>
 
 <script type="text/javascript">
 
-$('#otherLocation').focus(function(){
+(function($){
 
-	if(this.value == 'Enter Location'){
+	$('#otherLocation').focus(function(){
 
-		this.value = '';
+		if(this.value == 'Enter Location'){
 
-		$('#otherRadio').attr("checked", "checked");
+			this.value = '';
 
-	}
+			$('#otherRadio').attr("checked", "checked");
 
-}).blur(function(){
+		}
 
-	if(this.value == ''){
+	}).blur(function(){
 
-		$('#otherLocation').value = 'Enter Location';
+		if(this.value == ''){
 
-		$('#otherRadio').val('other');
+			$('#otherLocation').value = 'Enter Location';
 
-		$('#otherRadio').attr("checked", false);
+			$('#otherRadio').val('other');
 
-	}else{
+			$('#otherRadio').attr("checked", false);
 
-		$('#otherRadio').val(this.value);
+		}else{
 
-	}
+			$('#otherRadio').val(this.value);
 
-});
+		}
 
-$('#otherRadio').focus(function(){
+	});
 
-	$('#otherLocation').focus();
+	$('#otherRadio').focus(function(){
 
-});
+		$('#otherLocation').focus();
+
+	});
+
+
+	$('select').change(function() {
+		if ( $(this).find('option:selected').attr('value') == 'Other' || $(this).find('option:selected').attr('value') == 'Other Search Engine' ) {
+			$('#' + $(this).attr("id") + '_other').show(250).focus();
+		} else {
+			$('#' + $(this).attr("id") + '_other').hide(175);
+		}
+	});
+
+})(jQuery);
+
 
 </script>
 
