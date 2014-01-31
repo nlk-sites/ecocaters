@@ -327,8 +327,8 @@ eco_bgimg();
 
                 <p>
                 	<label for="contact_second_budget_for_catering">What is your budget for catering?</label>
-                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$500 - $1,000" />  $500 - $1,000<br />
-                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$1,000 - $2,000" />  $1,000 - $2,000<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$1,000 - $1,500" />  $1,00 - $1,500<br />
+                    <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$1,500 - $2,000" />  $1,500 - $2,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$2,000 - $4,000" />  $2,000 - $4,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$4,000 - $6,000" />  $4,000 - $6,000<br />
                     <input type="radio" style="width:auto; height:auto" name="contact_second_budget_for_catering" value="$6,000 - $8,000" />  $6,000 - $8,000<br />
