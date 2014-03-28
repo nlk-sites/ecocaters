@@ -334,7 +334,7 @@ function google_additional_questions_tracking(){
 		</noscript>
 
 		<?php
-	}
+	//}
 }
 //add_action('wp_footer', 'google_additional_questions_tracking'); // replaced with Tag Manager
 
