@@ -290,7 +290,7 @@ function eco_title() {
 
 
 function google_additional_questions_tracking(){
-	if ( is_page('additional-questions') ) {
+	//if ( is_page('additional-questions') ) {
 		?>
 
     	<!-- Google Code for Conversion Conversion Page -->
@@ -336,7 +336,7 @@ function google_additional_questions_tracking(){
 		<?php
 	}
 }
-add_action('wp_footer', 'google_additional_questions_tracking');
+//add_action('wp_footer', 'google_additional_questions_tracking'); // replaced with Tag Manager
 
 function google_tag_manager(){
 
