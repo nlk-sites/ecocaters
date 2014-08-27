@@ -1,7 +1,9 @@
 <?php
 $args = array(
 	'show_option_all' => 'Select a category',
-	'orderby' => 'NAME'
+	'orderby' => 'NAME',
+	'hierarchical' => 1,
+	'depth' => 2
 );
 wp_dropdown_categories( $args );
 ?>
