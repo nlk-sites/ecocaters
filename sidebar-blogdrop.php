@@ -1,7 +1,7 @@
 <?php
 $args = array(
 	'show_option_all' => 'Select a category',
-	'orderby' => 'count'
+	'orderby' => 'NAME'
 );
 wp_dropdown_categories( $args );
 ?>
