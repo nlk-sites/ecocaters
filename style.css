@@ -185,22 +185,33 @@ body {
 }
 .hright {
 	float: right;
-	width: 620px;
+	margin-top: 27px;
+	width: 200px;
 }
 #tagline {
-	float: right;
-	font: 22px/120% "AL", Arial, Helvetica, sans-serif;
-	margin: 60px 0 0;
+	font: 14px "AH", Arial, Helvetica, sans-serif;
+	letter-spacing: .3px;
+	text-align: right;
 }
 #hlocs {
-	float: right;
-	font: 13px/22px "AH", Arial, Helvetica, sans-serif;
+	font: 13px/24px "AH", Arial, Helvetica, sans-serif;
 	color: #538b1d;
+	margin-top: 6px;
+	text-align: right;
 }
 #hlocs strong {
 	font-weight:normal;
 	font-family: "AR", Arial, Helvetica, sans-serif;
 	color: #666;
+}
+.hmid {
+	font: 14px "AL", Arial, Helvetica, sans-serif;
+	letter-spacing: .7px;
+	max-width: 456px;
+	margin: auto;
+	position: relative;
+	text-align: center;
+	top: 76px;
 }
 #nav {
 	float: left;
