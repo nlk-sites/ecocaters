@@ -189,8 +189,8 @@ body {
 	width: 200px;
 }
 #tagline {
-	font: 14px "AH", Arial, Helvetica, sans-serif;
-	letter-spacing: .3px;
+	font: 700 13px "AM", Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
 	text-align: right;
 }
 #hlocs {
