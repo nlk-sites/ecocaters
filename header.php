@@ -40,7 +40,7 @@ wp_head(); ?>
             <div id="tagline"><?php bloginfo('description'); ?></div>
             <p id="hlocs">Los Angeles <strong>310.202.0326</strong><br />Washington D.C. <strong>202.810.3262</strong><br />San Diego <strong>858.246.6129</strong></p>
         </div>
-        <div class="hmid">GRASS-FED MEATS&nbsp;&nbsp;|&nbsp;&nbsp;LOCAL PRODUCE&nbsp;&nbsp;|&nbsp;&nbsp;SUSTAINABLE FOOD</div>
+        <div class="hmid">GRASS-FED MEATS&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;LOCAL PRODUCE&nbsp;&nbsp;<span>|</span>&nbsp;&nbsp;SUSTAINABLE FOOD</div>
 	</div>
 <?php
 wp_nav_menu( array(
