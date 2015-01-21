@@ -310,6 +310,15 @@ body {
 #nav ul li ul a:hover {
 	text-decoration: underline;
 }
+#nav ul ul.sub-menu ul.sub-menu {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+#nav ul ul.sub-menu li:hover > ul.sub-menu {
+	display: block;
+}
 /* main content */
 #page {
 	float: left;
